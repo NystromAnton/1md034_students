@@ -13,11 +13,11 @@ Before you submit the final version of your labs, make sure that your project fu
 ## 02 HTML
 
 Create an index.html file which contains:
-- [ ] A headline
-- [ ] A section to select burgers that contains at least three items. Each item has:
-	- [ ] A name
-	- [ ] An image
-	- [ ] Information about allergies 
+- [x] A headline
+- [x] A section to select burgers that contains at least three items. Each item has:
+	- [x] A name
+	- [x] An image
+	- [x] Information about allergies 
 - [ ] A section to collect customer information:
 	- [ ] First- and Last Name (in one field)
 	- [ ] E-Mail Address
