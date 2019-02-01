@@ -1,6 +1,80 @@
 body {
     font-family: "Times New Roman";
-    font-size: 3.1  vh;
+    font-size: 3.1vh;
+}
+
+.grid-container {
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 360px 360px 360px;
+     background-color: #000000;
+     color: #ffffff;
+ }
+
+.grid-item {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 0px;
+  padding: 0px;
+  font-size: 100%;
+  /*width: 40vh;*/
+}
+
+.name1 {
+  grid-row: 1;
+  grid-column: 1;
+  font-weight: bold;
+}
+
+.name2 {
+  grid-row: 1;
+  grid-column: 2;
+  font-weight: bold;
+}
+
+.name3 {
+  grid-row: 1;
+  grid-column: 3;
+  font-weight: bold;
+}
+
+.burger1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.burger2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.burger3 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.desc1 {
+  grid-row: 3;
+  grid-column: 1;
+  margin-top: -2vh;
+  margin-left: 5vh;
+  font-size: 2.7vh;
+}
+
+.desc2 {
+  grid-row: 3;
+  grid-column: 2;
+  margin-top: -2vh;
+  margin-left: 5vh;
+  font-size: 2.7vh;
+}
+
+.desc3 {
+  grid-row: 3;
+  grid-column: 3;
+  margin-top: -2vh;
+  margin-left: 5vh;
+  font-size: 2.7vh;
 }
 
 .allergies {
@@ -20,13 +94,26 @@ body {
   margin-top: -22vh;
   margin-left: 55vh;
   font-size: 8vh;
+  color: #000000;
 }
 
 #bar {
-  opacity: 0.5;
+  opacity: 0.6;
   object-fit: cover;
   height: 35vh;
   width: 194vh;
+}
+
+.select {
+  margin-top: 0vh;
+}
+
+.burgimg {
+  transition: transform 0.3s;
+}
+
+.burgimg:hover {
+  transform: scale(1.4);
 }
 
 #burgers {
@@ -69,6 +156,7 @@ button:hover {
 }
 
 footer {
-  margin-top: 4vh;
+  margin-top: 2vh;
   margin-left: 8vh;
+  font-size: 80%;
 }
