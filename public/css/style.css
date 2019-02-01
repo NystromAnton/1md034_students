@@ -1,0 +1,74 @@
+body {
+    font-family: "Times New Roman";
+    font-size: 3.1  vh;
+}
+
+.allergies {
+  font-weight: bold;
+}
+
+.header {
+  margin-left: 8vh;
+  margin-top: 5vh;
+  /*width: 100%;*/
+  height: 35vh;
+  overflow: hidden;
+}
+
+#welcome {
+  position: absolute;
+  margin-top: -22vh;
+  margin-left: 55vh;
+  font-size: 8vh;
+}
+
+#bar {
+  opacity: 0.5;
+  object-fit: cover;
+  height: 35vh;
+  width: 194vh;
+}
+
+#burgers {
+  background-color: #000000;
+  color: #ffffff;
+  padding-left: 10vh;
+  padding-bottom: 1.5vh;
+  border-style: dashed;
+  border-color: #ffffff;
+  border-radius: 3vh;
+}
+
+#information {
+  padding-left: 4vh;
+  padding-bottom: 1vh;
+  border-style: dashed;
+  border-color: #000000;
+  border-radius: 3vh;
+}
+
+section {
+  margin: 8vh;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+button {
+  margin-top: 2vh;
+  margin-left: 12vh;
+  border-radius: 1.3vh;
+}
+
+button:hover {
+  background-color: #bb9bff;
+  cursor: pointer;
+}
+
+#table {
+  width: 100%;
+}
+
+footer {
+  margin-top: 4vh;
+  margin-left: 8vh;
+}
