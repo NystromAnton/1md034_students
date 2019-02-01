@@ -3,19 +3,20 @@
     <head>
         <title>BurgerWorld</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
 <!-- comment -->
-        <main>
-            <h1>Welcome to BurgerWorld</h1>
-            <section>
+      <main>
+            <h1 id="welcome">Welcome to BurgerWorld</h1>
+            <section id="burgers">
 
-              <h2>Select burger</h2>
-              <p>This is where you execute burger selection</p>
+              <h2 class="select"><br>Select burger</h2>
+              <p class="select">This is where you execute burger selection</p>
 
-              <table>
+              <table id="table">
                   <thead>
-                      <tr>
+                      <tr align="center">
                           <th>The Bacon Burger</th>
                           <th>The Chicken Burger</th>
                           <th>The Halloumi Burger</th>
@@ -27,8 +28,8 @@
                             <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2015/11/gourmet-burger-1024x666.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300" >
                             <ul>
                               <li>950 kcal</li>
-                              <li>Contains gluten</li>
-                              <li>Contains pork</li>
+                              <li>Contains <span class="allergies">gluten</span></li>
+                              <li>Contains <span class="allergies">pork</span></li>
                             </ul>
                           </td>
 
@@ -36,8 +37,8 @@
                             <img src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Picture of a chicken burger" title="Chicken Burger" width="293">
                             <ul>
                               <li>730 kcal</li>
-                              <li>Contains gluten</li>
-                              <li>Contains lactose</li>
+                              <li>Contains <span class="allergies">gluten</span></li>
+                              <li>Contains <span class="allergies">lactose</span></li>
                             </ul>
                           </td>
 
@@ -45,8 +46,8 @@
                             <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/15/12/red-pepper-burger.jpg?w968h681" alt="Picture of a halloumi burger" title="Halloumi burger" width="279" >
                             <ul>
                               <li>800 kcal</li>
-                              <li>Contains gluten</li>
-                              <li>Contains lactose</li>
+                              <li>Contains <span class="allergies">gluten</span></li>
+                              <li>Contains <span class="allergies">lactose</span></li>
                             </ul>
                           </td>
                       </tr>
@@ -56,7 +57,7 @@
 
             </section>
 
-            <section>
+            <section id="information">
               <h2>Customer information</h2>
               <p>This is where you provide necessary information</p>
 
@@ -99,7 +100,7 @@
 
             </section>
 
-            <br /></br />
+
         </main>
 
         <footer>&copy Me</footer>
