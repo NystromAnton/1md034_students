@@ -17,7 +17,7 @@ Create an index.html file which contains:
 - [x] A section to select burgers that contains at least three items. Each item has:
 	- [x] A name
 	- [x] An image
-	- [x] Information about allergies 
+	- [x] Information about allergies
 - [x] A section to collect customer information:
 	- [x] First- and Last Name (in one field)
 	- [x] E-Mail Address
@@ -45,11 +45,11 @@ Create a menu.js file which contains:
 - [ ] At least five different burgers with respective attributes
 
 Create a js_script.js file which contains:
-- [ ] A MenuItem constructor 
-- [ ] A function that defines at least five different burgers using the MenuItem constructor and adds them to an array
-- [ ] A function that loops through the array and inserts the information to the burger selection section of the index.html file
-- [ ] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
-- [ ] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
+- [x] A MenuItem constructor
+- [x] A function that defines at least five different burgers using the MenuItem constructor and adds them to an array
+- [x] A function that loops through the array and inserts the information to the burger selection section of the index.html file
+- [x] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
+- [x] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
 - [ ] Add a checkbox to each menu item
 - [ ] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
@@ -68,7 +68,7 @@ Create a vue_script.js file which contains:
     - [ ] A location on the map
     - [ ] The order information
     - [ ] The customer information
-    
+
 ## Optional
 - [ ] Set the orderID on client side so one customer can make multiple orders
 - [ ] Only allow the order to be sent if all necessary information are provided

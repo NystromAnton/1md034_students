@@ -4,12 +4,15 @@
         <title>BurgerWorld</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://vuejs.org/js/vue.js"></script>
+        <script src="js/js_script.js" defer></script>
+        <script src="js/vue_script.js"></script>
     </head>
     <body>
 <!-- comment -->
       <main>
-            <header class="header">
-              <img id="bar" src="https://www.brasserieappelmans.be/wp-content/uploads/2017/11/private_bar.jpg">
+           <header class="header">
+              <img id="bar" src="img/bar.jpg">
               <h1 id="welcome">Welcome to BurgerWorld</h1>
             </header>
             <section id="burgers">
@@ -18,37 +21,44 @@
               <p class="select">This is where you execute burger selection</p>
               <br>
 
+              <!-- VUE -->
+              <!--<div id="burgervue">
+                <input v-model="menu">
+                <h1> {{menu}}</h1>
+              </div>
+-->
+
               <!-- GRID WITH BURGERS-->
-              <div align="center" class="grid-container">
+              <div align="center" class="wrapper">
 
                 <!-- BURGER NAMES-->
-                <div class="grid-item name1">
+                <div class="box name1">
                   <span>The Bacon Burger</span>
                 </div>
 
-                <div class="grid-item name2">
+                <div class="box name2">
                   <span>The Chicken Burger</span>
                 </div>
 
-                <div class="grid-item name3">
+                <div class="box name3">
                   <span>The Halloumi Burger</span>
                 </div>
 
                 <!-- BURGER PICTURES-->
-                <div class="grid-item burger1">
-                  <img class="burgimg" src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2015/11/gourmet-burger-1024x666.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300">
+                <div class="box burger1">
+                  <img class="burgimg" src="img/baconburger.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300">
                 </div>
 
-                <div class="grid-item burger2">
-                  <img class="burgimg" src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Picture of a chicken burger" title="Chicken Burger" width="293">
+                <div class="box burger2">
+                  <img class="burgimg" src="img/chickenburger.jpg" alt="Picture of a chicken burger" title="Chicken Burger" width="293">
                 </div>
 
-                <div class="grid-item burger3">
-                  <img class="burgimg" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/15/12/red-pepper-burger.jpg?w968h681" alt="Picture of a halloumi burger" title="Halloumi burger" width="279">
+                <div class="box burger3">
+                  <img class="burgimg" src="img/halloumiburger.jpg" alt="Picture of a halloumi burger" title="Halloumi burger" width="279">
                 </div>
 
                 <!-- BURGER DESCRIPTIONS-->
-                <div align="left" class="grid-item desc1">
+                <div align="left" class="box desc1">
                   <ul>
                     <li>950 kcal</li>
                     <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>
@@ -56,7 +66,7 @@
                   </ul>
                 </div>
 
-                <div align="left" class="grid-item desc2">
+                <div align="left" class="box desc2">
                   <ul>
                     <li>730 kcal</li>
                     <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>
@@ -64,7 +74,7 @@
                   </ul>
                 </div>
 
-                <div align="left" class="grid-item desc3">
+                <div align="left" class="box desc3">
                   <ul>
                     <li>820 kcal</li>
                     <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>

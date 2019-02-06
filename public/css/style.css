@@ -3,7 +3,7 @@ body {
     font-size: 3.1vh;
 }
 
-.grid-container {
+.wrapper {
      display: grid;
      grid-gap: 10px;
      grid-template-columns: 360px 360px 360px;
@@ -11,13 +11,25 @@ body {
      color: #ffffff;
  }
 
-.grid-item {
+.box {
   background-color: #000000;
   color: #fff;
   border-radius: 0px;
   padding: 0px;
   font-size: 100%;
   /*width: 40vh;*/
+}
+
+.burgerimages {
+  object-fit: fill;
+  width: 45vh;
+  height: 30vh;
+}
+
+.list {
+  font-size: 90%;
+  text-align: left;
+  margin-left: 6vh;
 }
 
 .name1 {
