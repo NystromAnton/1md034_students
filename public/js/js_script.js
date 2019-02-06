@@ -39,24 +39,10 @@ for (var i = 0; i < food.length; i++) {
       listelem.innerHTML = "Contains <span class=\"allergies\">gluten</span>"
       list.appendChild(listelem);
     }
-  /*  <p>
-        <label for="gender">Gender</label><br>
-        <input type="radio" id="Male" name="gender" value="male">Male<br>
-        <input type="radio" id="Female" name="gender" value="female">Female<br>
-        <input checked="checked" type="radio" id="Other" name="gender" value="other">Do not wish to provide<br>
-    </p>*/
-
 
     box.appendChild(list);
     grid.appendChild(box);
 }
-
-/*
-var orderButton = document.getElementById("orderButton");
-orderButton.onclick = function() {
-  console.log("Button clicked with js");
-}
-*/
 
 function getValues() {
   var fullname = document.getElementById("fullname").value;
@@ -89,3 +75,15 @@ function getValues() {
   var values = [fullname, email, street, house, po, gender, checkedburger];
   return values;
 }
+
+/*
+var orderButton = document.getElementById("orderButton");
+  orderButton.onclick = function() {
+    console.log(getValues());
+    var order = document.createElement("div");
+    order.innerHTML = getValues();
+    var output = document.getElementById("orderoutput");
+    order.setAttribute("id", "order");
+    output.appendChild(order);
+}
+*/

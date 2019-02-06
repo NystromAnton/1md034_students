@@ -18,18 +18,29 @@
             </header>
             <section id="burgers">
 
-              <h2 class="select"><br>Select burger</h2>
-              <p class="select">This is where you execute burger selection</p>
-              <br>
-
               <!-- VUE -->
             <!--  <div id="burgervue">
-                <div v-for: x in menuarr>
-                <h1> {{ wow }}</h1>
+                <h1> {{ select }}</h1>
+                <p> {{ selectinfo }}</p>
+
+                <div v-for="burger in menu" id="vuegrid">
+                  <div>
+                   <h4> {{ burger.name }} </h4>
+                   <ul>
+                     <li> {{ burger.kcal }} kcal </li>
+                     <li v-if="burger.lactose"> Contains <span class="allergies">lactose</span></li>
+                     <li v-if="burger.gluten"> Contains <span class="allergies">gluten</span></li>
+                   </ul>
+                   <img class="burgerimages" v-bind:src="burger.img">
+                </div>
               </div>
+
               </div>
 -->
 
+              <h2 class="select"><br>Select burger</h2>
+              <p class="select">This is where you execute burger selection</p>
+              <br>
               <!-- GRID WITH BURGERS-->
               <div align="center" class="wrapper">
 
