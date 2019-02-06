@@ -5,8 +5,9 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://vuejs.org/js/vue.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
         <script src="js/js_script.js" defer></script>
-        <script src="js/vue_script.js"></script>
+        <script src="js/vue_script.js" defer></script>
     </head>
     <body>
 <!-- comment -->
@@ -22,9 +23,10 @@
               <br>
 
               <!-- VUE -->
-              <!--<div id="burgervue">
-                <input v-model="menu">
-                <h1> {{menu}}</h1>
+            <!--  <div id="burgervue">
+                <div v-for: x in menuarr>
+                <h1> {{ wow }}</h1>
+              </div>
               </div>
 -->
 
@@ -32,7 +34,7 @@
               <div align="center" class="wrapper">
 
                 <!-- BURGER NAMES-->
-                <div class="box name1">
+              <!--  <div class="box name1">
                   <span>The Bacon Burger</span>
                 </div>
 
@@ -42,9 +44,10 @@
 
                 <div class="box name3">
                   <span>The Halloumi Burger</span>
-                </div>
+                </div> -->
 
                 <!-- BURGER PICTURES-->
+                <!--
                 <div class="box burger1">
                   <img class="burgimg" src="img/baconburger.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300">
                 </div>
@@ -56,8 +59,9 @@
                 <div class="box burger3">
                   <img class="burgimg" src="img/halloumiburger.jpg" alt="Picture of a halloumi burger" title="Halloumi burger" width="279">
                 </div>
-
+              -->
                 <!-- BURGER DESCRIPTIONS-->
+                <!--
                 <div align="left" class="box desc1">
                   <ul>
                     <li>950 kcal</li>
@@ -81,6 +85,7 @@
                     <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Lactose_intolerance" target="_blank">lactose</a></span></li>
                   </ul>
                 </div>
+              -->
               </div>
 
               <!-- OLD TABLE
@@ -165,13 +170,18 @@
                     <label for="gender">Gender</label><br>
                     <input type="radio" id="Male" name="gender" value="male">Male<br>
                     <input type="radio" id="Female" name="gender" value="female">Female<br>
-                    <input checked="checked" type="radio" id="Do not wish to provide" name="gender" value="other">Do not wish to provide<br>
+                    <input checked="checked" type="radio" id="Other" name="gender" value="other">Do not wish to provide<br>
                 </p>
               </form>
             </section>
 
             <!-- BUTTON FOR SUBMITTING THE FORM-->
-            <button type="submit"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>
+            <!--<button id="orderButton" type="submit"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>-->
+            <button id="orderButton" type="submit" v-on:click="markDone()"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>
+            <br>
+            <br>
+            <div id="orderoutput"></div>
+
         </main>
 
         <br>

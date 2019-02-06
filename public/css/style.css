@@ -152,19 +152,23 @@ section {
   margin-top: 2vh;
 }
 
-button {
+#orderButton {
   margin-top: 2vh;
   margin-left: 12vh;
   border-radius: 1.3vh;
 }
 
-button:hover {
+#orderButton:hover {
   background-color: #bb9bff;
   cursor: pointer;
 }
 
 #table {
   width: 100%;
+}
+
+#order {
+  margin-left: 8vh;
 }
 
 footer {

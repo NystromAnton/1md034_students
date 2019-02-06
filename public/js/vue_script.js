@@ -19,3 +19,17 @@ var menuarr = [burg1, burg2, burg3, burg4, burg5];
     //menu: menuarr
   //},
 //})
+
+new Vue({
+  el: "#orderButton",
+  methods: {
+    markDone: function () {
+      console.log(getValues());
+      var order = document.createElement("div");
+      order.innerHTML = getValues();
+      var output = document.getElementById("orderoutput");
+      order.setAttribute("id", "order");
+      output.appendChild(order);
+    }
+  }
+})
