@@ -3,6 +3,19 @@ body {
     font-size: 3.1vh;
 }
 
+#burgershop {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+
+#vuetext {
+  text-align: left;
+  margin-left: 8vh;
+  font-size: 90%;
+}
+
 .wrapper {
      display: grid;
      grid-gap: 10px;

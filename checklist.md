@@ -54,11 +54,11 @@ Create a js_script.js file which contains:
 - [x] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 Create a vue_script.js file which contains:
-- [ ] A function that loops through the array and inserts the information to the burger selection section of the index.html file
-- [ ] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
-- [ ] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
-- [ ] Add a checkbox to each menu item
-- [ ] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
+- [x] A function that loops through the array and inserts the information to the burger selection section of the index.html file
+- [x] A function that loads the information from the menu.js json object and inserts the information to the burger selection section of the index.html file
+- [x] Only displays allergy information if relevant (either only if it contains gluten or lactose, or only if it's gluten or lactose free)
+- [x] Add a checkbox to each menu item
+- [x] A functionality for the order button that writes the information from the text boxes, the gender and all items on the order (that have the checkbox checked) to the bottom of the html file when the button is clicked
 
 ## 05 Messaging
 

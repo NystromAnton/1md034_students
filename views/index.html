@@ -10,7 +10,6 @@
         <script src="js/vue_script.js" defer></script>
     </head>
     <body>
-<!-- comment -->
       <main>
            <header class="header">
               <img id="bar" src="img/bar.jpg">
@@ -18,129 +17,31 @@
             </header>
             <section id="burgers">
 
-              <!-- VUE -->
-            <!--  <div id="burgervue">
+             <!-- VUE -->
+              <div id="burgervue">
                 <h1> {{ select }}</h1>
                 <p> {{ selectinfo }}</p>
 
-                <div v-for="burger in menu" id="vuegrid">
-                  <div>
-                   <h4> {{ burger.name }} </h4>
-                   <ul>
-                     <li> {{ burger.kcal }} kcal </li>
-                     <li v-if="burger.lactose"> Contains <span class="allergies">lactose</span></li>
-                     <li v-if="burger.gluten"> Contains <span class="allergies">gluten</span></li>
-                   </ul>
-                   <img class="burgerimages" v-bind:src="burger.img">
+                <div id="burgershop">
+                  <div v-for="burger in menu">
+                    <div>
+                      <h4> {{ burger.name }} </h4>
+                      <input type="checkbox" name="burgers":value="burger.name">
+                      <br>
+                      <br>
+
+                      <img class="burgerimages" v-bind:src="burger.img">
+
+                      <ul id="vuetext">
+                        <li> {{ burger.kcal }} kcal </li>
+                        <li v-if="burger.lactose"> Contains <span class="allergies">lactose</span></li>
+                        <li v-if="burger.gluten"> Contains <span class="allergies">gluten</span></li>
+                      </ul>
+
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              </div>
--->
-
-              <h2 class="select"><br>Select burger</h2>
-              <p class="select">This is where you execute burger selection</p>
-              <br>
-              <!-- GRID WITH BURGERS-->
-              <div align="center" class="wrapper">
-
-                <!-- BURGER NAMES-->
-              <!--  <div class="box name1">
-                  <span>The Bacon Burger</span>
-                </div>
-
-                <div class="box name2">
-                  <span>The Chicken Burger</span>
-                </div>
-
-                <div class="box name3">
-                  <span>The Halloumi Burger</span>
-                </div> -->
-
-                <!-- BURGER PICTURES-->
-                <!--
-                <div class="box burger1">
-                  <img class="burgimg" src="img/baconburger.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300">
-                </div>
-
-                <div class="box burger2">
-                  <img class="burgimg" src="img/chickenburger.jpg" alt="Picture of a chicken burger" title="Chicken Burger" width="293">
-                </div>
-
-                <div class="box burger3">
-                  <img class="burgimg" src="img/halloumiburger.jpg" alt="Picture of a halloumi burger" title="Halloumi burger" width="279">
-                </div>
-              -->
-                <!-- BURGER DESCRIPTIONS-->
-                <!--
-                <div align="left" class="box desc1">
-                  <ul>
-                    <li>950 kcal</li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Pork" target="_blank">pork</a></span></li>
-                  </ul>
-                </div>
-
-                <div align="left" class="box desc2">
-                  <ul>
-                    <li>730 kcal</li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Lactose_intolerance" target="_blank">lactose</a></span></li>
-                  </ul>
-                </div>
-
-                <div align="left" class="box desc3">
-                  <ul>
-                    <li>820 kcal</li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Gluten-related_disorders" target="_blank">gluten</a></span></li>
-                    <li>Contains <span class="allergies"><a href="https://en.wikipedia.org/wiki/Lactose_intolerance" target="_blank">lactose</a></span></li>
-                  </ul>
-                </div>
-              -->
-              </div>
-
-              <!-- OLD TABLE
-              <table id="table">
-                  <thead>
-                      <tr align="center">
-                          <th>The Bacon Burger</th>
-                          <th>The Chicken Burger</th>
-                          <th>The Halloumi Burger</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>
-                            <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2015/11/gourmet-burger-1024x666.jpg" alt="Picture of a bacon burger" title="Bacon Burger" width="300" >
-                            <ul>
-                              <li>950 kcal</li>
-                              <li>Contains <span class="allergies">gluten</span></li>
-                              <li>Contains <span class="allergies">pork</span></li>
-                            </ul>
-                          </td>
-
-                          <td>
-                            <img src="https://static1.squarespace.com/static/596e7cdfa5790aab89b70f49/5977680f725e25b1cccdf632/5ad182448a922d44a43955a6/1524025316943/DSC_0639.jpg?format=2500w" alt="Picture of a chicken burger" title="Chicken Burger" width="293">
-                            <ul>
-                              <li>730 kcal</li>
-                              <li>Contains <span class="allergies">gluten</span></li>
-                              <li>Contains <span class="allergies">lactose</span></li>
-                            </ul>
-                          </td>
-
-                          <td>
-                            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/15/12/red-pepper-burger.jpg?w968h681" alt="Picture of a halloumi burger" title="Halloumi burger" width="279" >
-                            <ul>
-                              <li>800 kcal</li>
-                              <li>Contains <span class="allergies">gluten</span></li>
-                              <li>Contains <span class="allergies">lactose</span></li>
-                            </ul>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-            -->
-
             </section>
 
             <!-- CUSTOMER INFORMATION SECTION-->
@@ -150,7 +51,6 @@
 
               <h3>Delivery information:</h3>
 
-              <!-- FORM FOR ENTERING CUSTOMER INFORMATION-->
               <form>
                 <p>
                     <label for="fullname">Full name</label><br>
@@ -187,7 +87,6 @@
             </section>
 
             <!-- BUTTON FOR SUBMITTING THE FORM-->
-            <!--<button id="orderButton" type="submit"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>-->
             <button id="orderButton" type="submit" v-on:click="markDone()"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>
             <br>
             <br>

@@ -1,4 +1,4 @@
-var grid = document.getElementsByClassName("wrapper")[0];
+/*var grid = document.getElementsByClassName("wrapper")[0];
 
 for (var i = 0; i < food.length; i++) {
     var box = document.createElement("div");
@@ -44,7 +44,8 @@ for (var i = 0; i < food.length; i++) {
     grid.appendChild(box);
 }
 
-function getValues() {
+// Get values from form
+function getValuesJS() {
   var fullname = document.getElementById("fullname").value;
   var email = " " + document.getElementById("email").value;
   var street = " " + document.getElementById("street").value;
@@ -76,12 +77,11 @@ function getValues() {
   return values;
 }
 
-/*
 var orderButton = document.getElementById("orderButton");
   orderButton.onclick = function() {
-    console.log(getValues());
+    console.log(getValuesJS());
     var order = document.createElement("div");
-    order.innerHTML = getValues();
+    order.innerHTML = getValuesJS();
     var output = document.getElementById("orderoutput");
     order.setAttribute("id", "order");
     output.appendChild(order);
