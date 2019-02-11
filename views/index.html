@@ -92,7 +92,8 @@
                   <h1> Click in the map! </h1>
                   <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
                   <div class="view-box">
-                    <div id="dots" v-on:click="addOrder">
+                    <!--<div id="dots" v-on:click="addOrder">-->
+                    <div id="dots" v-on:click="displayOrder">
                         <div
                           v-for="(order, key) in orders"
                           v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
@@ -100,7 +101,7 @@
                         </div>
                     </div>
                   </div>
-                                    
+
               </form>
             </section>
 
