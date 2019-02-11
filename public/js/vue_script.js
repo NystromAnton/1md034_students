@@ -21,8 +21,8 @@ function getValues() {
   //Save values to variables
   var fullname = "Name: " + document.getElementById("fullname").value;
   var email = " Email: " + document.getElementById("email").value;
-  var street = " Street: " + document.getElementById("street").value;
-  var house = " House: " + document.getElementById("house").value;
+  //var street = " Street: " + document.getElementById("street").value;
+  //var house = " House: " + document.getElementById("house").value;
   var po = " Payment: " + document.getElementById("Payment options").value;
   var gender = document.getElementsByName("gender");
 
@@ -49,7 +49,8 @@ function getValues() {
     }
     gender = " Gender: " + gender;
 
-    var values = [fullname, email, street, house, po, gender, checkedburger];
+    //var values = [fullname, email, street, house, po, gender, checkedburger];
+    var values = [fullname, email, po, gender, checkedburger];
     return values;
   }
 

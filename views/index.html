@@ -8,6 +8,11 @@
         <script type="text/javascript" src="js/menu.js"></script>
         <script src="js/js_script.js" defer></script>
         <script src="js/vue_script.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/deli-very.css">
+        <script src="/vue/vue.js" defer></script>
+        <script src="/socket.io/socket.io.js" defer></script>
+        <script src="js/deli-very.js" defer></script>
     </head>
     <body>
       <main>
@@ -60,14 +65,14 @@
                     <label for="email">E-mail</label><br>
                     <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
                   </p>
-                  <p>
+                  <!--<p>
                     <label for="street">Street</label><br>
                     <input type="text" id="street" name="str" required="required" placeholder="Street name">
                   </p>
                   <p>
                     <label for="house">House</label><br>
                     <input type="number" id="house" name="hou" required="required" placeholder="House number">
-                  </p>
+                  </p> -->
                 <p>
                     <label for="Payment options">Payment options</label><br>
                     <select id="Payment options" name="po">
@@ -83,6 +88,19 @@
                     <input type="radio" id="Female" name="gender" value="female">Female<br>
                     <input checked="checked" type="radio" id="Other" name="gender" value="other">Do not wish to provide<br>
                 </p>
+
+                  <h1> Click in the map! </h1>
+                  <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
+                  <div class="view-box">
+                    <div id="dots" v-on:click="addOrder">
+                        <div
+                          v-for="(order, key) in orders"
+                          v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
+                          {{key}}
+                        </div>
+                    </div>
+                  </div>
+                                    
               </form>
             </section>
 
