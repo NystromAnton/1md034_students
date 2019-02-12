@@ -106,10 +106,11 @@ new Vue({
     },
     addOrder: function (event) {
       this.markDone();
+      var info = getValues();
       socket.emit("addOrder", { orderId: this.getNext(),
                                 details: this.tmpDetails,
                                 orderItems: [getCheckedBurgers()],
-                                personalItems: [getValues()[0], getValues()[1], getValues()[2], getValues()[3]]
+                                personalItems: [info[0], info[1], info[2], info[3]]
                               });
     },
     displayOrder: function (event) {
