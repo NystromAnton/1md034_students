@@ -32,6 +32,11 @@ body {
 	text-align: center;
 }
 
+#personalItems {
+  font-style: italic;
+	font-size: 80%;
+}
+
 #orderList {
 	top:1em;
 	left:1em;

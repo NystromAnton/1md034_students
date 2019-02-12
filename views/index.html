@@ -4,6 +4,7 @@
         <title>BurgerWorld</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="/socket.io/socket.io.js" defer></script>
         <script src="https://vuejs.org/js/vue.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script src="js/js_script.js" defer></script>
@@ -11,11 +12,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/deli-very.css">
         <script src="/vue/vue.js" defer></script>
-        <script src="/socket.io/socket.io.js" defer></script>
-        <script src="js/deli-very.js" defer></script>
+        <!--<script src="js/deli-very.js" defer></script>-->
     </head>
     <body>
-      <main>
+      <main id="main">
            <header class="header">
               <img id="bar" src="img/bar.jpg">
               <h1 id="welcome">Welcome to BurgerWorld</h1>
@@ -107,7 +107,7 @@
             </section>
 
             <!-- BUTTON FOR SUBMITTING THE FORM-->
-            <button id="orderButton" type="submit" v-on:click="markDone()"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>
+            <button id="orderButton" type="submit" v-on:click="addOrder"><img src="https://www.clipartmax.com/png/middle/307-3073773_delivery-car-vector.png" width="50">Place my order!</button>
             <br>
             <br>
             <div id="orderoutput"></div>
