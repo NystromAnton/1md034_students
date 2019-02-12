@@ -94,11 +94,12 @@
                   <div class="view-box">
                     <!--<div id="dots" v-on:click="addOrder">-->
                     <div id="dots" v-on:click="displayOrder">
-                        <div
+                      <div id="target" v-bind:style="{ left: tmpDetails.x + 'px', top: tmpDetails.y + 'px'}"> {{ tmpSign }} </div>
+                        <!--<div
                           v-for="(order, key) in orders"
                           v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
                           {{key}}
-                        </div>
+                        </div>-->
                     </div>
                   </div>
 
